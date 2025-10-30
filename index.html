@@ -33,6 +33,7 @@
 
     <div class="controls">
       <button id="gen">URLを生成して再生</button>
+      <button id="onlyGen">URLを生成</button>
       <button id="copy">URLをコピー</button>
       <button id="open">別タブで開く</button>
       <button id="clear">入力をクリア</button>
@@ -108,6 +109,8 @@
 
     document.getElementById('clear').addEventListener('click', ()=>{ txtEl.value = ''; outEl.textContent='--'; player.src=''; });
 
+    // URLを生成するだけ（再生しない）
+    document.getElementById('onlyGen').addEventListener('click', ()=> generate(false));
     // initial build
     generate(false);
 
