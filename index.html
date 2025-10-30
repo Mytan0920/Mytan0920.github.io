@@ -5,10 +5,10 @@
   <title>AI拓哉 音声ジェネレーター</title>
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:20px;background:#f7f7fb;color:#111}
-    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,50,0.06);max-width:820px;margin:0 auto}
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 17px rgba(20,20,50,0.06);max-width:820px;margin:0 auto}
     textarea{width:100%;min-height:100px;padding:10px;font-size:16px;border-radius:8px;border:1px solid #e0e6f0}
     input[type=text]{width:100%;padding:10px;border-radius:8px;border:1px solid #e0e6f0}
-    button{padding:10px 14px;border-radius:8px;border:0;background:#2463ff;color:#fff;font-weight:600;cursor:pointer}
+    button{padding:10px 14px;border-radius:8px;border:0;background:#A1736B;color:#fff;font-weight:600;cursor:pointer}
     .muted{color:#556}
     .row{display:flex;gap:10px;align-items:center}
     .small{font-size:13px}
@@ -39,10 +39,12 @@
     </div>
 
     <div style="height:12px"></div>
-      <div>
+    
+    <div>
       <div class="small">生成されたURL（エンコード済み）:</div>
       <pre id="out">--</pre>
     </div>
+    
     <div style="height:8px"></div>
 
     <audio id="player" controls preload="none"></audio>
