@@ -25,12 +25,7 @@
     <label for="txt">テキスト（ここに入れたい文字を入力）</label>
     <textarea id="txt" placeholder="例: 拓哉の射精3000円"></textarea>
 
-    <div style="height:12px"></div>
-
-    <label for="base">ベースURL（基本触らない）</label>
-    <input id="base" type="text" value="https://cache-a.oddcast.com/tts/genC.php?EID=3&LID=12&VID=2&TXT=&EXT=mp3&FNAME=&ACC=9066743&SceneID=2770703&HTTP_ERR=" />
-
-    <div style="height:12px"></div>
+    <div style="height:30px"></div>
 
     <div class="controls">
       <button id="gen">URLを生成して再生</button>
@@ -46,12 +41,18 @@
       <audio id="player" controls preload="none"></audio>
     </div>
     
-    <div style="height:12px"></div>
+    <div style="height:30px"></div>
       
       <div class="small">生成されたURL（エンコード済み）:</div>
       <pre id="out">--</pre>
    
     <div style="height:12px"></div>
+     
+      <label for="base">ベースURL（基本触らない）</label>
+      <input id="base" type="text" value="https://cache-a.oddcast.com/tts/genC.php?EID=3&LID=12&VID=2&TXT=&EXT=mp3&FNAME=&ACC=9066743&SceneID=2770703&HTTP_ERR=" />
+
+    <div style="height:12px"></div>
+
     <div class="small muted">注意: サイト側のCORS設定などによりブラウザで直接再生・ダウンロードできない場合があります。その場合は「別タブで開く」を使って直接アクセスしてください。</div>
     <div class="small muted">※一部に生成AIを利用しています</div>
   </div>
